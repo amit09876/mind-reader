@@ -16,7 +16,8 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 finish();
-                Intent intent = new Intent(SplashActivity.this, HomeActivity.class);
+                Intent intent =
+                        new Intent(SplashActivity.this, HomeActivity.class);
                 startActivity(intent);
             }
         };
