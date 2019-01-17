@@ -23,4 +23,13 @@
         android:layout_centerHorizontal="true"
         android:background="@drawable/mind_reader" />
 
+    <TextView
+        android:layout_below="@id/imageViewMindReader"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:text="Version 1.0"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 </RelativeLayout>
