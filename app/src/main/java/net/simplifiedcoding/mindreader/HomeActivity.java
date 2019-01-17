@@ -23,21 +23,24 @@ public class HomeActivity extends AppCompatActivity {
         buttonContinue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //getting input from editText
+                //and converting the name to upper case
                 String name = editTextName.getText().toString().trim().toUpperCase();
-
+                //checking if the name is not empty
                 if(name.isEmpty()){
+                    //if the name is empty
+                    //stopping the execution
                     editTextName.setError("Name required...");
                     editTextName.requestFocus();
                     return;
                 }
-
-                //continue further processing
+                //if validation succeeds
+                //creating intent
                 Intent intent = new Intent(HomeActivity.this, MindReadingActivity.class);
-
+                //adding the entered name to the intent
                 intent.putExtra("key_name", name);
-
+                //finally starting the activity
                 startActivity(intent);
-
             }
         });
     }

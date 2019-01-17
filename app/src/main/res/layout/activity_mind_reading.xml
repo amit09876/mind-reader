@@ -1,9 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="7dp"
     tools:context=".MindReadingActivity">
 
-</android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="280dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/wizard_welcome" />
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Welcome Mr./Ms."
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewWelcome"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Abhishek"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textViewSpeech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewName"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Are you ready\nto play the\nMind Game\n\nSo I will read\nyour mind"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:background="#8f90af"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textViewTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Think of a number between 1 to 9"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/buttonContinue"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimaryDark"
+            android:text="Continue"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
