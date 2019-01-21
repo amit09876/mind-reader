@@ -32,20 +32,20 @@ public class MindReadingActivity extends AppCompatActivity {
         buttonContinue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               count++;
+                count++;
 
-               if(count == 1){
-                   textViewTask.setText("Multiply the number with 2");
-               }else if(count == 2){
-                   textViewTask.setText("Add 8 to the result");
-               }else if(count == 3){
-                   textViewTask.setText("Divide the result by 2");
-               }else if(count == 4){
-                   textViewTask.setText("Now subtract the first number that you thought with the result");
-                   buttonContinue.setText("See the Magic");
-               }else{
-
-               }
+                if (count == 1) {
+                    textViewTask.setText("Multiply the number with 2");
+                } else if (count == 2) {
+                    textViewTask.setText("Add 8 to the result");
+                } else if (count == 3) {
+                    textViewTask.setText("Divide the result by 2");
+                } else if (count == 4) {
+                    textViewTask.setText("Now subtract the first number that you thought with the result");
+                    buttonContinue.setText("See the Magic");
+                } else {
+                    startActivity(new Intent(MindReadingActivity.this, ResultActivity.class));
+                }
             }
         });
     }

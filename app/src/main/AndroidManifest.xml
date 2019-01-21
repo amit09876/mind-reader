@@ -23,7 +23,8 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity android:name=".MindReadingActivity" />
-        <activity android:name=".ResultActivity"></activity>
+        <activity android:name=".ResultActivity" />
+        <activity android:name=".FinalActivity"></activity>
     </application>
 
 </manifest>
