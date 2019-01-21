@@ -22,7 +22,8 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".MindReadingActivity"></activity>
+        <activity android:name=".MindReadingActivity" />
+        <activity android:name=".ResultActivity"></activity>
     </application>
 
 </manifest>
